@@ -1,0 +1,18 @@
+var Sqrt = fun(base) {
+    return base * base
+}
+
+var Pow = fun(base, exponent) {
+    var n = 0
+    var result = base
+    while(n < exponent - 1){
+        result = result * base
+        n = n + 1
+    }
+    return result
+}
+
+export {
+    "Sqrt": Sqrt,
+    "Pow": Pow
+}
